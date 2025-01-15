@@ -16,21 +16,7 @@ const modbusConfigs = [
         count: 2,                 // Number of registers to read
         gaugeId: 'gauge_1',       // Gauge ID for MQTT topic
         charId: 'char_1'          // Characteristic ID for MQTT topic
-    },
-    {
-        host: '192.168.1.100',
-        port: 502,
-        slaveId: 2,
-        registerType: 'readHoldingRegisters',
-        registerAddress: 200,
-        dataType: 'float',
-        byteOrder: 'msb_first',
-        speed: 9600,
-        count: 2,
-        gaugeId: 'gauge_2',
-        charId: 'char_2'
     }
-    // Add more configurations as needed
 ];
 
 // Setup MQTT client
